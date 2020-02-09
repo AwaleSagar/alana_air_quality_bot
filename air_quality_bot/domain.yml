@@ -1,0 +1,40 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - air_quality_today
+  - air_quality_historical
+  - air_quality_forecast
+
+actions:
+- utter_greet
+- utter_happy
+- utter_goodbye
+- utter_today_air
+- utter_historial_air
+- utter_forecast_air
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  
+  utter_today_air:
+  - text: "Here is today's air quality:"
+  
+  utter_historical_air:
+  - text: "Here is the history of air quality:"
+  
+  utter_forecast_air:
+  - text: "Here is the forecast of air quality:"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
